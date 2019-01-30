@@ -1,0 +1,17 @@
+ID: textanalysis
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: db
+   type: hdb
+   path: db
+   requires:
+    - name: ratecasedb
+
+resources:
+ - name: ratecasedb
+   properties:
+      service: hanatrial
+      hdi-container-name: '${service-name}'
+   type: org.cloudfoundry.existing-service
