@@ -1,0 +1,5 @@
+FULLTEXT INDEX "textanalysis.db::data-model.tweetindex"
+ON "textanalysis.db::data-model.Tweets" ("tweetDescription")
+CONFIGURATION 'textanalysis.db::tweetConfig'
+LANGUAGE DETECTION ('EN')
+TEXT ANALYSIS ON

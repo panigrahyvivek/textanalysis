@@ -1,0 +1,10 @@
+namespace textanalysis.db;
+
+context "data-model" {
+
+    /*@@layout{"layoutInfo":{"x":137,"y":34.5}}*/
+    entity Tweets {
+        key tweetId          : String(10);
+            tweetDescription : String(5000);
+    };
+};
